@@ -1,11 +1,30 @@
+@charset "utf-8";
+p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, select, button, code, label, em, span, strong {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: -.5px;
+  word-break: keep-all;
+}
+
+* {margin: 0;padding: 0;}
 li {list-style: none;}
 a {text-decoration: none;color: inherit;}
 
+.wrap {position: relative;}
 /* header */
-header {width: 100%;height: 100px;max-width: 1920px;position: absolute;top: 0;left: 50%;transform: translateX(-50%);text-align: center;}
-header h1 {background: url(../img/logo.png)no-repeat;text-indent: -9999px;display: block;float: left;width: 187px;background-size: 100%;margin-left: 20px;}
-header nav {display: inline-block;margin: 0;padding: 0;border: 0;letter-spacing: -.5px;word-break: keep-all;}
-header nav ul {position: relative;}
-header nav ul li {font-weight: bold;line-height: 50px;display: inline-block;}
-header nav ul li a {padding: 37px 24px;}
-header .global {position: relative;float: right;}
+#header {height: 100px;width: 100%;position: absolute;top: 0;left: 50%;transform: translateX(-50%);text-align: center;z-index: 10;}
+#header h1 {padding-left: 40px;}
+#header h1 a {width: 187px;height: 98px;background: url(../img/logo.png) no-repeat 50% 50%;display: block;text-indent: -9999px;float: left;box-sizing: border-box;background-size: 100% auto;padding: 36px 0;display: block;}
+#header .gnb {position: relative;display: flex;}
+#header .gnb ul {text-align: center;flex: 0 1 90%}
+#header .gnb ul li {display: inline-block;padding: 40px 20px;font-size: 17px;font-weight: bold;text-align: center;}
+#header .gnb ul li .subMenu {display: none;}
+#header .gnb ul li a {}
+#header .gnb ul li a span {}
+#header .gnb .global {width: 100px;flex:0 5%;padding: 40px;}
+#header .gnb .global span {width: 25px;height: 25px;background:url(../img/ico_lang.png);display: block;float: left;}
+#header .gnb .global h3 {display: block;font-size: 20px;text-transform: uppercase;line-height: 23px;}
+#header .gnb .global h3 span {}
