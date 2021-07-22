@@ -28,3 +28,8 @@ a {text-decoration: none;color: inherit;}
 #header .gnb .global span {width: 25px;height: 25px;background:url(../img/ico_lang.png);display: block;float: left;}
 #header .gnb .global h3 {display: block;font-size: 20px;text-transform: uppercase;line-height: 23px;}
 #header .gnb .global h3 span {}
+
+.main {}
+.main .mainSlider {position: relative;}
+.main #arrow_prev {position: absolute;top: 75%;left: 25%;}
+.main #arrow_next {position: absolute;top: 75%;left: 27%;}
