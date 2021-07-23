@@ -13,19 +13,48 @@ p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fie
 li {list-style: none;}
 a {text-decoration: none;color: inherit;}
 
-.wrap {position: relative;}
+.wrap {position: relative;font-family: 'Noto Sans KR';}
 /* header */
-#header {height: 100px;width: 100%;position: absolute;top: 0;left: 50%;transform: translateX(-50%);text-align: center;z-index: 10;}
+#header {height: 100px;width: 100%;position: absolute;top: 0;left: 50%;transform: translateX(-50%);text-align: center;z-index: 10;border-bottom: 1px solid #eee;}
+#header:after {content: '';width: 100%;background: #fff;height: 100px;position: absolute;top: 0;left: 0;z-index: -1;opacity: 0;transition: all 0.4s ease-out;}
+#header:hover {background: #fff;}
+#header:hover:after {height: 170px;opacity: 1;}
 #header h1 {padding-left: 40px;}
 #header h1 a {width: 187px;height: 98px;background: url(../img/logo.png) no-repeat 50% 50%;display: block;text-indent: -9999px;float: left;box-sizing: border-box;background-size: 100% auto;padding: 36px 0;display: block;}
-#header .gnb {position: relative;display: flex;}
-#header .gnb ul {text-align: center;flex: 0 1 90%}
-#header .gnb ul li {display: inline-block;padding: 40px 20px;font-size: 17px;font-weight: bold;text-align: center;}
-#header .gnb ul li .subMenu {display: none;}
-#header .gnb .global {width: 100px;flex:0 5%;padding: 40px;}
+#header .gnb_separator {border-bottom: 1px solid #ccc;width: 100%;height: 1px;position: absolute;top: 100px;opacity: 0;transition: all 0.4s ease-in-out;}
+#header:hover .gnb_separator {opacity: 1;}
+
+#header .gnb .gnbWrap {display: inline-block;position: relative;text-align: center;}
+#header .gnb .gnbWrap .depth1 {display: inline-block;text-align: center;font-size: 18px;font-weight: 500;color: #000;}
+#header .gnb .gnbWrap .depth1 a {padding: 36px 22px;display: block;position: relative;}
+#header .gnb .gnbWrap .depth1 a:after {content: '';width: 0;height: 4px;background: #4772d5;position: absolute;left: 50%;bottom: -4px;transform: translateX(-50%);transition: all 0.2s ease-in-out;opacity: 0;}
+#header .gnb .gnbWrap .depth1:hover a:after {width: 100%;opacity: 1;}
+#header .gnb .gnbWrap .depth1:hover {color: #4772d5;}
+#header .gnb .gnbWrap .depth1:hover > .depth2 li {display: block;}
+#header .gnb .gnbWrap .depth1 .depth2 {position: absolute;left: 0;width: 100%;}
+#header .gnb .gnbWrap .depth1 .depth2 ul {width: 100%;align-items: center;}
+#header .gnb .gnbWrap .depth1 .depth2 ul li {float: left;background: inherit;display: none;max-width: 1920px;}
+#header .gnb .gnbWrap .depth1 .depth2 ul li:hover a{}
+#header .gnb .gnbWrap .depth1 .depth2 ul li a {font-size: 14px;padding: 28px 16px;color: #777;position: relative;font-weight: 500;}
+#header .gnb .gnbWrap .depth1 .depth2 ul li a:after {content: '';width: 0;height: 1px;background: #000;position: absolute;left: 50%;bottom: 5px;transform: translateX(-50%);transition: all 0.2s ease-in-out;opacity: 0;}
+#header .gnb .gnbWrap .depth1 .depth2 ul li a:hover:after {width: 100%;opacity: 1;}
+#header .gnb .gnbWrap .depth1 .depth2 ul li a:hover {color: #000;font-size: 16px;}
+#header .gnb .gnbWrap .depth1 .depth2 .depth2_2 {padding-left: 100px;}
+#header .gnb .gnbWrap .depth1 .depth2 .depth2_3 {padding-left: 230px;}
+#header .gnb .gnbWrap .depth1 .depth2 .depth2_4 {padding-left: 130px;}
+#header .gnb .gnbWrap .depth1 .depth2 .depth2_5 {padding-left: 350px;}
+#header .gnb .gnbWrap .depth1 .depth2 .depth2_6 {padding-left: 400px;}
+
+
+#header .gnb .global {width: 100px;padding: 40px;position: absolute;top: 0;right: 40px;}
 #header .gnb .global span {width: 25px;height: 25px;background:url(../img/ico_lang.png);display: block;float: left;}
 #header .gnb .global h3 {display: block;font-size: 20px;text-transform: uppercase;line-height: 23px;}
 
+#header .gnb .allMenu {position: absolute;top: 44px;right: 60px;}
+#header .gnb .allMenu a {width: 21px;height: 18px;display: block;position: relative;}
+#header .gnb .allMenu a:before {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 2px;background: #222;}
+#header .gnb .allMenu span {width: 14px;height: 2px;background: #222;position: absolute;right:0;top: 0;bottom: 0;margin: auto;display: inline-block;}
+#header .gnb .allMenu a:after {content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background: #222;}
 
 .main {position: relative;}
 .main #arrow_prev {position: absolute;top: 75%;left: 25%;}
@@ -126,10 +155,22 @@ section.application {text-align: left;background: url(../img/bg_cs.jpg)no-repeat
 #footer {background: #1e1f21;color: #666;position: relative;}
 #footer:after {content: '';position: absolute;top: 70px;left: 0;width: 100%;height: 1px;background: #333;}
 #footer .wrap {width: 100%;max-width: 1280px;margin: 0 auto;}
-#footer .wrap .footer_header {}
+#footer .wrap .footer_header {position: relative;}
 #footer .wrap .footer_header ul {overflow: hidden;}
 #footer .wrap .footer_header ul li {padding: 20px 10px;float: left;}
-#footer .wrap .footer_header ul li a {font-size: 14px;font-weight: 700;}
+#footer .wrap .footer_header ul li:first-child {padding-left: 0;}
+#footer .wrap .footer_header ul li a {font-size: 13px;font-weight: 700;}
 #footer .wrap .footer_header ul li.private a {color: #fff;}
 #footer .wrap .footer_header .family {position: absolute;top: 0;right: 0;}
+#footer .wrap .footer_header .family_btn {background: url(../img/ico_up.png)no-repeat 100% 50%;padding-right: 20px;cursor: pointer;margin: 24px 20px 0 0;color: #fff;font-size: 14px;font-weight: bold;}
+#footer .wrap .footer_header .family ul {position: absolute;bottom: 40px;left: -5px;width: 120px;padding: 10px 0;font-size: 12px;color: #fff;border: 1px solid #1e1f21;background: #242527;}
+#footer .wrap .footer_header .family ul li {padding: 5px;margin: 0;}
+
+
 #footer .wrap .footer_foot {margin-top: 30px;}
+#footer .wrap .footer_foot div ul li {display: inline-block;margin-right: 20px;font-size: 13px;margin-bottom: 30px;}
+#footer .wrap .footer_foot div {position: relative;padding-bottom: 100px;}
+#footer .wrap .footer_foot div p {font-size: 12px;}
+#footer .wrap .footer_foot div div {position: absolute;top: 0;right: 0;width: 150px;}
+#footer .wrap .footer_foot div div span {font-size: 14px;position: absolute;top: 10px;right: 160px;}
+#footer .wrap .footer_foot div div p {font-size: 22px;display: inline-block;color: #fff;font-weight: 700;}
