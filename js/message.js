@@ -1,6 +1,6 @@
-$(".message_contents ul li").mouseenter(function(){
+$(".message_contents div").mouseenter(function(){
   $(this).addClass("active")
 })
-$(".message_contents ul li").mouseleave(function(){
+$(".message_contents div").mouseleave(function(){
   $(this).removeClass("active")
 })

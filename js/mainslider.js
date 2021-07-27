@@ -7,6 +7,8 @@ $('.mainSlider').slick({
   cssEase: 'linear',
   autoplay: true,
   autoplaySpeed: 5000,
+
+    
 });
 
 

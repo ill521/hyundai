@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+  <div class="gnb-area"></div>
   <div class="wrap">
     <header id="header">
       <nav class="mainPage">
@@ -290,13 +291,15 @@
     <section class="main">
       <div class="mainSlider">
         <div class="slick-list item">
-          <a href="">
-            <img src="./img/getImage1.jpg" alt="slick1">
+          <a href="#">
+            <img class="getimage1" src="./img/getImage1.jpg" alt="slick1">
+            <img class="getimage1-2" src="./img/getImage1-2.jpg" alt="slick1-2">
           </a>
         </div>
         <div class="slick-list item">
-          <a href="">
-            <img src="./img/getImage2.jpg" alt="slick2">
+          <a href="#">
+            <img class="getimage2" src="./img/getImage2.jpg" alt="slick2">
+            <img class="getimage2-2" src="./img/getImage2-2.jpg" alt="slick2">
           </a>
         </div>
       </div>
@@ -407,9 +410,8 @@
           <p class="message">기업 고객을 위한 통합 문자메시지 서비스</p>
         </div>
         <div class="message_contents">
-          <ul>
-            <li>
-              <img src="./img/cmvisual1.jpg" alt="신속성">
+          <div>
+            <img src="./img/cmvisual1.jpg" alt="신속성">
               <div class="message_inner">
                 <h5>1</h5>
                 <h3>신속성</h3>
@@ -421,9 +423,9 @@
                   전송 보장
                 </h4>
               </div>
-            </li>
-            <li>
-              <img src="./img/cmvisual2.jpg" alt="안정성">
+          </div>
+          <div>
+            <img src="./img/cmvisual2.jpg" alt="안정성">
               <div class="message_inner">
                 <h5>2</h5>
                 <h3>안정성</h3>
@@ -434,9 +436,9 @@
                   등 철저한 보안안책 적용
                 </h4>
               </div>
-            </li>
-            <li>
-              <img src="./img/cmvisual3.jpg" alt="다양성">
+          </div>
+          <div>
+            <img src="./img/cmvisual3.jpg" alt="다양성">
               <div class="message_inner">
                 <h5>3</h5>
                 <h3>다양성</h3>
@@ -448,9 +450,9 @@
                   요금상품 제공
                 </h4>
               </div>
-            </li>
-            <li>
-              <img src="./img/cmvisual4.jpg" alt="편의성">
+          </div>
+          <div>
+            <img src="./img/cmvisual4.jpg" alt="편의성">
               <div class="message_inner">
                 <h5>4</h5>
                 <h3>편의성</h3>
@@ -460,8 +462,7 @@
                   전송 통계,내부직원용 SUB ID 생성 기능
                 </h4>
               </div>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="button">
           <a href="#"><span>VIEW MORE</span></a>
@@ -484,68 +485,66 @@
           </div>
         </div>
         <div class="futurenet_contents">
-          <ul>
-            <li class="blue">
-              <a href="#">
-                <div class="content_bg">
-                  <h4>07</h4>
-                  <span>2021.06</span>
-                </div>
-                <div class="content_desc">
-                  <p>보도자료</p>
-                  <h3>
-                    [트렌드 매거진 2021-2]
-                    핫이슈 키워드 '휴먼터치',···
-                  </h3>
-                </div>
-              </a>
-            </li>
-            <li class="white">
-              <a href="#">
-                <div class="content_bg">
-                  <h4>07</h4>
-                  <span>2021.06</span>
-                </div>
-                <div class="content_desc">
-                  <p>보도자료</p>
-                  <h3>
-                    [트렌드 매거진 2021-1]
-                    핫이슈 키워드 '스마트···
-                  </h3>
-                </div>
-              </a>
-            </li>
-            <li class="blue">
-              <a href="#">
-                <div class="content_bg">
-                  <h4>29</h4>
-                  <span>2020.10</span>
-                </div>
-                <div class="content_desc">
-                  <p>보도자료</p>
-                  <h3>
-                    [디지털사이니지 트렌드
-                    매거진 2020-4]2020···
-                  </h3>
-                </div>
-              </a>
-            </li>
-            <li class="white">
-              <a href="#">
-                <div class="content_bg">
-                  <h4>28</h4>
-                  <span>2020.10</span>
-                </div>
-                <div class="content_desc">
-                  <p>보도자료</p>
-                  <h3>
-                    [디지털사이니지 트렌드
-                    매거진 2020-4] 지금 바로···
-                  </h3>
-                </div>
-              </a>
-            </li>
-          </ul>
+          <div class="blue">
+            <a href="#">
+              <div class="content_bg">
+                <h4>07</h4>
+                <span>2021.06</span>
+              </div>
+              <div class="content_desc">
+                <p>보도자료</p>
+                <h3>
+                  [트렌드 매거진 2021-2]
+                  핫이슈 키워드 '휴먼터치',···
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="white">
+            <a href="#">
+              <div class="content_bg">
+                <h4>07</h4>
+                <span>2021.06</span>
+              </div>
+              <div class="content_desc">
+                <p>보도자료</p>
+                <h3>
+                  [트렌드 매거진 2021-1]
+                  핫이슈 키워드 '스마트···
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="blue">
+            <a href="#">
+              <div class="content_bg">
+                <h4>29</h4>
+                <span>2020.10</span>
+              </div>
+              <div class="content_desc">
+                <p>보도자료</p>
+                <h3>
+                  [디지털사이니지 트렌드
+                  매거진 2020-4]2020···
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="white">
+            <a href="#">
+              <div class="content_bg">
+                <h4>28</h4>
+                <span>2020.10</span>
+              </div>
+              <div class="content_desc">
+                <p>보도자료</p>
+                <h3>
+                  [디지털사이니지 트렌드
+                  매거진 2020-4] 지금 바로···
+                </h3>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section><!--//futurenet_news-->
@@ -606,9 +605,11 @@
           </a>
         </div>
       </div>
-      <span class="slick-prev2" id="arrow_prev2"><i class="fa fa-long-arrow-left fa-2x" aria-hidden="true" style="color:black"></i></span>
-      <span class="separator"></span>
-      <span class="slick-next2" id="arrow_next2"><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true" style="color:black"></i></span>
+      <div class="arrowdiv">
+        <span class="slick-prev2" id="arrow_prev2"><i class="fa fa-long-arrow-left fa-2x" aria-hidden="true" style="color:black"></i></span>
+        <span class="separator"></span>
+        <span class="slick-next2" id="arrow_next2"><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true" style="color:black"></i></span>
+      </div>
     </section><!--//case-->
     <section class="application">
       <div class="wrap">
@@ -629,7 +630,7 @@
     <footer id="footer">
       <div class="wrap">
         <div class="footer_header">
-          <ul>
+          <ul class="line">
             <li>
               <a href="#">전자공고</a>
             </li>
@@ -674,6 +675,7 @@
             </ul>
           </div>
         </div>
+      </div>
         <div class="footer_foot">
           <div>
             <ul>
@@ -682,13 +684,12 @@
               <li>사업자등록번호:112-81-31178</li>
             </ul>
             <p>Copyright©2020 HYUNDAI FUTURENET All rights reserved.</p>
-            <div>
+            <div class="contact">
               <span>TEL</span>
               <p>02-3450-2233</p>
             </div>
           </div>
         </div>
-      </div>
     </footer>
   </div>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -704,6 +705,7 @@
   <script src="./js/family.js"></script>
   <script src="./js/header.js"></script>
   <script src="./js/message.js"></script>
-  
+  <script src="./js/messageslide.js"></script>
+  <script src="./js/futureslide.js"></script>
 </body>
 </html>
