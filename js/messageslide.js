@@ -11,13 +11,12 @@ $('.message_contents').slick({
     }
    },
    {
-    breakpoint: 650,
+    breakpoint: 520,
     settings: {
       slidesToShow:1,
       arrows:false,
       dots: true,
-      centerMode: true,
-      centerPadding: '80px'
+      
     }
    }
 
