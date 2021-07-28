@@ -18,6 +18,15 @@ $('.message_contents').slick({
       dots: true,
       
     }
+   },
+   {
+    breakpoint: 375,
+    settings: {
+      slidesToShow:1,
+      arrows:false,
+      dots: true,
+      
+    }
    }
 
  ]

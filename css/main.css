@@ -342,3 +342,12 @@ section.application {text-align: left;background: url(../img/bg_cs.jpg)no-repeat
 
   .companyMessageing .message_contents div {margin-left: 32px;}
 }
+
+@media (max-width: 375px){
+  .mainPage .inner_wrap:before {background-size: 65%;background-position-y: 40px;}
+
+  .companyMessageing .message_contents div {margin-left: 16px;}
+
+  #footer .footer_foot div .contact {position: absolute;top: -82%;left: 50%;transform: translateX(-50%);}
+  #footer .wrap .footer_header ul li:last-child {background: none;}
+}
