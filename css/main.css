@@ -344,7 +344,7 @@ section.application {text-align: left;background: url(../img/bg_cs.jpg)no-repeat
   .companyMessageing .message_contents div {margin-left: 32px;}
 }
 
-@media (max-width: 390px) {
+@media (max-width: 320px) {
   .mainPage .inner_wrap:before {background-size: 65%;background-position-y: 40px;}
 
   .companyMessageing .message_contents div {margin-left: 16px;}
