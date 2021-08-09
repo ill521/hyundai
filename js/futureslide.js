@@ -1,6 +1,6 @@
 
 $(window).resize(function(e){
-  if(window.innerWidth < 800) {
+  if(window.innerWidth < 768) {
       if(!$('.futurenet_contents').hasClass('slick-initialized')){
         $('.futurenet_contents').slick({
           slidesToShow:2,

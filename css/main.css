@@ -110,7 +110,7 @@ a {text-decoration: none;color: inherit;}
 
 
 /* 기업메시지 */
-.companyMessageing {background: #f3f3f3;padding-top: 100px;padding-bottom: 100px;padding: 0 20px;}
+.companyMessageing {background: #f3f3f3;padding: 100px 20px;}
 .companyMessageing .wrap {width: 100%;max-width: 1280px;margin: 0 auto;}
 .companyMessageing .message_contents {margin-top: 100px;padding-bottom: 100px;}
 .companyMessageing .message_contents div {position: relative;}
@@ -213,10 +213,11 @@ section.application {text-align: left;background: url(../img/bg_cs.jpg)no-repeat
 
 /* 반응형 */
 
-@media (max-width: 1240px) {
+@media (max-width: 1280px) {
   #header .gnb .gnbWrap .depth1 {font-size: 16px;}
   #header .gnb .gnbWrap .depth1 a {padding: 36px 18px;margin-left: -20px;}
   .digital .wrap .digital_main .main_contents > div .content_pic img {width: 100%;}
+  .futurenet_news {padding: 100px 20px;}
 }
 @media (max-width: 1024px) {
   #header .gnb .gnbWrap .depth1 {display: none;}
@@ -273,7 +274,7 @@ section.application {text-align: left;background: url(../img/bg_cs.jpg)no-repeat
 
   .case .case_slider div img {width: 100%;height: 400px}
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .futurenet_news .wrap .futurenet_header {display: block;text-align: center;width: 100%;}
   .futurenet_news .wrap .futurenet_header .pageNumber:after {content: '';background: url(../img/ico_slash.png)no-repeat;width: 20px;height: 20px;display: block;position: absolute;top: 25px;left:50% ;transform: translateX(-35%);}
 
@@ -346,10 +347,10 @@ section.application {text-align: left;background: url(../img/bg_cs.jpg)no-repeat
   .companyMessageing .message_contents div {margin-left: 32px;}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   .mainPage .inner_wrap:before {background-size: 65%;background-position-y: 40px;}
 
-  .companyMessageing .message_contents div {margin-left: 16px;}
+  .companyMessageing .message_contents div {margin-left: 9px;}
 
   #footer .footer_foot div .contact {position: absolute;top: -82%;left: 50%;transform: translateX(-50%);}
   #footer .wrap .footer_header ul li:last-child {background: none;}
